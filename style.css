@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  background: linear-gradient(#f5efe6, #e8f3f1);
+}
+
+/* ===== الهيدر ===== */
+header {
+  background: linear-gradient(to right, #0f2f3a, #2a9d8f);
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 3px 15px rgba(0,0,0,0.4);
+}
+
+.subtitle {
+  color: #e0f2f1;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* ===== الهيرو ===== */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  background: url("header.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero h1, .hero p {
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 35px;
+}
+
+/* ===== المحتوى ===== */
+.container {
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #0f2f3a;
+}
+
+/* ===== الأزرار ===== */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #2a9d8f;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #21867a;
+}
+
+/* ===== الفوتر ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f2f3a;
+  color: white;
+  margin-top: 30px;
+}
